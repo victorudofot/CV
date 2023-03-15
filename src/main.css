@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;
-    background-color: #f2f2f2
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+.nav-menu{
+    @apply gap-14 flex justify-between place-items-center;
+
 }
 .navbar{
-    @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.4rem];
+    @apply min-h-[70px] px-0 py-3 place-items-center flex justify-between;
 }
 .nav_link{
-    @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-orange-600 hover:bg-opacity-10 transition-all duration-300;
+    @apply text-2xl font-semibold text-[#dcdcdc] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-orange-600 hover:bg-opacity-10 transition-all duration-300;
 }
 .portfolio{
     @apply absolute top-[20%] left-[50%] text-center;
@@ -27,3 +32,15 @@ html{
     @apply bg-[#dcdcdc] shadow-md shadow-[#dcdcdc];
 
 }
+.transform_form{
+    transform: translate(0, 5%);
+}  
+.container {
+    @apply rounded-[8px] bg-[#e6e6e6] p-[10px] mx-auto my-auto block w-[50%];
+  }
+  .submit_button{
+    @apply bg-orange-500 w-[100%] text-[#dcdcdc] px-3 py-4 box-border rounded-md cursor-pointer;
+  }
+  .text_area{
+    @apply w-[100%] px-2 py-5 border-solid border-[#dcdcdc] rounded-md border-none mx-1 my-[2px] resize-y;
+  }
