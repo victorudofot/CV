@@ -515,10 +515,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.relative{
-  position: relative;
-}
-
 .float-right{
   float: right;
 }
