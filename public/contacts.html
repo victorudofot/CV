@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="my contact information" />
+    <meta name="keywords" content="html, css,javascript,xml,python">
+    <link href="./tailwind.css" rel="stylesheet">
+    <title>My Contact</title>
+  </head>
+  <body>
+     <!-- Navigation -->
+    <header class="bg-[#393c41]">
+      <nav class="navbar">
+        <a class="logo" href="#logo">
+        <img alt="Logo" class="h-32 px-1 py-0" src="../Images/me-modified.png"  />
+          </a>
+          <ul class="nav-menu">
+              <li class="nav_link"><a href="index.html">Portfolio</a></li>
+              <li class="nav_link"><a href="hobbies.html">Hobbies</a></li>
+              <li class="nav_link"><a href="contacts.html">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+  <!--Contact Form-->
+  
+  <h2 class="text-center font-semibold py-5 text-[3rem]" >Contact Form</h2>
+  <section class="container content-center transform_form">
+     <form action="mailto:victorudmatt2@gmail.com" method="POST">
+      <label for="fname">Name</label>
+      <input class="text_area" type="text" id="fname" name="name" placeholder="Type your name..">
+      <label for="email">E-mail Address</label>
+      <input class="text_area" type="text" id="mail" name="e-mail" required placeholder="Type your e-mail..">
+      <label for="message">Message</label>
+      <textarea class="text_area"id="message" name="message" placeholder="Type your message.." style="height:200px"></textarea>
+      <input type="submit" value="Send" class="submit_button hover:bg-orange-600 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300">
+    </form>
+   </section>
+    
+  </body>
+</html>
