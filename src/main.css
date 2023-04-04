@@ -33,7 +33,7 @@ html{
 
 }
 .transform_form{
-    transform: translate(0, 5%);
+    transform: translate(0, 100%);
 }  
 .container {
     @apply rounded-[8px] bg-[#e6e6e6] p-[10px] mx-auto my-auto block w-[50%];
